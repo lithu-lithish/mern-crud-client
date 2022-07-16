@@ -1,38 +1,94 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
+  display: flex;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.inputs {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(172, 38, 60);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs input {
+  margin: 1%;
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  color: "pink";
+  padding-left: 14px;
+  background-color: rgb(254, 209, 209);
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.button {
+  height: 40px;
+  width: 120px;
+  background-color: rgb(117, 0, 0);
+  color: white;
+  margin: 2%;
+  border-color: rgb(117, 0, 0);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(197, 78, 98);
+}
+
+.userContainer button:hover {
+  background-color: rgb(119, 18, 35);
+}
+
+.usersList {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  width: 380px;
+}
+
+.userContainer button {
+  border-color: rgb(172, 38, 60);
+  background-color: rgb(172, 38, 60);
   color: white;
+  margin: 1.4px;
+  cursor: pointer;
+}
+.users {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(96, 16, 16);
+  color: white;
+  display: flex;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.users h3 {
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.users p {
+  margin-left: 15px;
+  font-size: 16px;
 }
